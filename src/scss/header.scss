@@ -1,0 +1,351 @@
+@import "./media.scss";
+
+.section__header {
+    background: url(../images/whitebcg1.svg) 0 100%/100% auto no-repeat,
+                url(../images/bluebcg1.svg) 0 0/cover no-repeat;
+                height: 1111px;
+
+                @include for-xl-desktop {
+                    height: 946px;
+                }
+
+    .header {
+        width: 100%;
+        padding-top: 25px;
+
+        @include for-xl-desktop {
+            padding-top: 22px;
+        }
+
+        .header__content {
+            width: 38px + 1297px + 77px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+
+            @include for-xl-desktop {
+                width: 1280px;
+            }
+
+            .header__logo {
+                font-size: 17px;
+                line-height: 21px;
+                opacity: 0.8;
+                cursor: pointer;
+
+                @include for-xl-desktop {
+                    font-size: 15px;
+                    line-height: 19px;
+                }
+
+                a {
+                    color: #fff;
+                }
+
+                a:hover {
+                    color: #B3EEFF;
+                }
+            }
+
+            .header__nav {
+                font-size: 17px;
+                font-weight: bold;
+                line-height: 21px;
+                text-transform: uppercase;
+
+                @include for-xl-desktop {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                a {
+                    color: #fff;
+                    margin: 0 40.5px;
+                    cursor: pointer;
+
+                    
+                    @include for-xl-desktop {
+                        margin: 0 30px;
+                    }
+                }
+
+                a:hover {
+                    color: #B3EEFF;
+                }
+                
+                .header_active {
+                    padding-bottom: 7px;
+                    border-bottom: 3px solid #FF9B05;
+                }
+            }
+
+            .header__cabinet {
+                width: 123px + 77px + 15px;
+                height: 58px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                @include for-xl-desktop {
+                    height: 54px;
+                }
+
+                .header_lang {
+                    width: 123px;
+                    height: 58px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    cursor: pointer;
+
+                    @include for-xl-desktop {
+                        height: 54px;
+                    }
+
+                    span {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 17px;
+                        line-height: 21px;
+                        color: #2E3A59;
+                    }
+                }
+
+                .header_account {
+                    width: 77px;
+                    height: 58px;
+                    background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
+                    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    @include for-xl-desktop {
+                        height: 54px;
+                    }
+                }
+            }
+        }
+    }
+
+    .subheader {
+        width: 38px + 1297px + 77px;
+        margin: 0 auto;
+
+        @include for-xl-desktop {
+            width: 1280px;
+        }
+
+        .subheader_cheats {
+            display: inline-block;
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 55px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.1);
+            cursor: default;
+            margin: 26px 0 0 362px;
+
+            @include for-xl-desktop {
+                font-size: 39px;
+                line-height: 49px;
+                margin-left: 329px;
+            }
+        }
+
+        .wallhack {
+            transform: rotate(-16.17deg);
+            margin-left: 342px;
+        }
+    }
+
+    .subheader__container {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        
+        .subheader_left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 850px;
+
+            @include for-xl-desktop {
+                height: 724px;
+                width: 720px;
+            }
+
+            .subheader_left_list {
+                min-height: 201px + 214px + 78px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-left: 254px;
+
+                @include for-xl-desktop {
+                    margin: 0;
+                    min-height: 450px;
+                    width: 668px;
+                    align-self: end;
+                }
+        
+                .left_title {
+                    font-family: 'Montserrat-Bold';
+                    font-weight: 900;
+                    font-size: 55px;
+                    line-height: 67px;
+                    color: #fff;
+                    max-width: 611px;
+                    position: relative;
+
+                    @include for-xl-desktop {
+                        font-size: 50px;
+                        line-height: 62px;
+                    }
+
+                    .left_svgline {
+                        position: absolute;
+                        top: -16px;
+                        left: -25px;
+
+                        @include for-xl-desktop {
+                            width: 41px;
+                            top: -14px;
+                            left: -21px;
+                        }
+                    }
+
+                    .left_polygon {
+                        margin: 11px 3px 0;
+                    }
+                }
+
+                .left_line {
+                    max-width: 110px;
+                }
+
+                .left_text {
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #FFFFFF;
+                    max-width: 680px;
+
+                    @include for-xl-desktop {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+
+                .left_buttons {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 240px + 34px + 257px;
+
+                    @include for-xl-desktop {
+                        width: 212px + 241px + 30px;
+                    }
+
+                    .left_button1 {
+                        width: 240px;
+                        background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
+                        box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+                        border-radius: 5px;
+                        padding: 24px 34px 24px 48px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        @include for-xl-desktop {
+                            width: 212px;
+                            padding: 20px 30px 20px 44px;
+                        }
+
+                        p {
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #fff;
+
+                            @include for-xl-desktop {
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+
+                    .left_button2 {
+                        max-width: 257px;
+                        border: 1px solid rgba(169, 234, 255, 1);
+                        border-radius: 5px;
+                        padding: 28px 38px;
+                        background: transparent;
+
+                        @include for-xl-desktop {
+                            width: 241px;
+                            padding: 24px 34px;
+                        }
+
+                        p {
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #fff;
+
+                            @include for-xl-desktop {
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .left_loot {
+                margin: 14px 0 0 134px;
+                max-width: 809px;
+
+                @include for-xl-desktop {
+                    max-width: 668px;
+                    margin: 0;
+                }
+            }
+        }
+
+        .subheader_right {
+            position: relative;
+            margin-top: 50px;
+
+            @include for-xl-desktop {
+                margin: 50px 0 0 50px;
+            }
+
+            .right_wave {
+                position: absolute;
+                top: 16px;
+                left: 95px;
+
+                @include for-xl-desktop {
+                    top: 0;
+                    left: -23px;
+                }
+            }
+
+            .right_car {
+                margin-left: -76px;
+
+                @include for-xl-desktop {
+                    width: 860px;
+                    margin-left: -195px;
+                }
+            }
+        }
+    }
+}

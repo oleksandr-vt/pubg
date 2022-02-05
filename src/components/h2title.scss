@@ -1,0 +1,11 @@
+%h2title {
+    font-family: 'Montserrat-Bold';
+    font-size: 45px;
+    line-height: 55px;
+    text-transform: uppercase;
+
+    @include for-xl-desktop {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}

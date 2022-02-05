@@ -1,0 +1,123 @@
+@import "../components/h2title.scss";
+@import "./media.scss";
+
+.about {
+    background: url(../images/blueabout.svg) 0 0/100% auto no-repeat;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    // @include for-xl-desktop {
+    //     height: 450px;
+    // }
+
+    .about__container {
+        background: url(../images/bcgdott.svg) 50% 77% no-repeat;
+        width: 940px;
+        height: 241px + 77px + 130px;
+
+        @include for-xl-desktop {
+            // background: url(../images/bcgdott.svg) 50% 84%/660px no-repeat;
+            // height: 337px; 
+        }
+
+        .about__heading {
+            @extend %h2title;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            width: 510px;
+            margin: 0 auto;
+
+            .about_line {
+                position: absolute;
+                top: -16px;
+                left: -23px;
+
+                @include for-xl-desktop {
+                    width: 39px;
+                    top: -13px;
+                    left: 9px;
+                }
+            }
+        }
+
+        .about__block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 227px;
+            margin-top: 43px;
+
+            // @include for-xl-desktop {
+            //     // height
+            //     margin-top: 10px;
+            // }
+
+            .about_rhomb {
+                width: 115px;
+                height: 115px;
+                background: linear-gradient(103.01deg, #0AA6FE -49.1%, #05FFFF 177.15%);
+                box-shadow: 0px 4px 25px rgba(10, 166, 254, 0.48), inset 0px 0px 25px rgba(0, 50, 180, 0.3);
+                border-radius: 15px;
+                align-self: flex-end;
+            }
+
+            .rhomb_left {
+                transform: rotate(135deg);
+
+                img {
+                transform: rotate(-135deg);
+                }
+            }
+
+            .rhomb_right {
+                transform: rotate(-45deg);
+
+                img {
+                    transform: rotate(225deg);
+                }
+            }
+
+            .about_man {
+                width: 601px;
+                height: 225px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .about_image {
+                    max-width: 117px;
+                    min-height: 117px;
+                }
+
+                .about_title {
+                    color: #2E3A59;
+                    font-weight: 600;
+                    margin-top: 11px;
+                    position: relative;
+                }
+
+                .about_title::after {
+                    content: "\00a0";
+                    width: 29px;
+                    height: 11px;
+                    background: linear-gradient(98.51deg, #FF9898 14.64%, #FF1F00 102.27%);
+                    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+                    border-radius: 5px 55px;
+                    margin: 5px 0 0 8px;
+                    position: absolute;
+                }
+
+                .about_subtitle {
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: #2E3A59;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

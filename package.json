@@ -1,0 +1,22 @@
+{
+    "name": "data_processing",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "sinchirocka",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.27.7",
+        "gulp": "^4.0.2",
+        "gulp-changed": "^4.0.3",
+        "gulp-clean": "^0.4.0",
+        "gulp-imagemin": "^8.0.0",
+        "gulp-minify-css": "^1.2.4",
+        "gulp-sass": "^5.1.0",
+        "node-sass": "^7.0.1",
+        "sass": "^1.49.0"
+    }
+}

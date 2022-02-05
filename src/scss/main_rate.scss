@@ -1,0 +1,350 @@
+@import "../components/h2title.scss";
+@import "./media.scss";
+
+.rate {
+    height: 1026px;
+    display: flex;
+    justify-content: center;
+
+    .rate__container {
+        width: 416px + 488px + 416px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .rate__heading {
+            @extend %h2title;
+            color: #2E3A59;
+            margin-top: 108px;
+            position: relative;
+
+            .rate_line1 {
+                position: absolute;
+                top: -12px;
+                left: -24px;
+
+                @include for-xl-desktop {
+                    width: 31px;
+                    top: -11px;
+                    left: -21px;
+                }
+            }
+
+            .rate_line2 {
+                position: absolute;
+                bottom: -14px;
+                right: -26px;
+
+                @include for-xl-desktop {
+                    width: 31px;
+                    bottom: -8px;
+                    right: -25px;
+                }
+            }
+        }
+
+        // Reusable buttons
+        .rate__system {
+            width: 206px + 226px + 135px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 64px;
+
+            @include for-xl-desktop {
+                width: 489px;
+                margin-top: 54px;
+            }
+
+            .rate_button1 {
+                width: 206px;
+                background: #fff;
+                box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 22px 0;
+
+                @include for-xl-desktop {
+                    width: 181px;
+                    padding: 19px 0;
+                }
+
+                p {
+                    font-weight: bold;
+                    color: #aaa;
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-left: 17px;
+
+                    @include for-xl-desktop {
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-left: 13px;
+                    }
+                }
+
+                img {
+                    @include for-xl-desktop{
+                        width: 29px;
+                    }
+                }
+            }
+            
+            .rate_button2 {
+                width: 195px;
+                background: #fff;
+                box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 17px 0;
+
+                @include for-xl-desktop {
+                    width: 170px;
+                    padding: 14px 0;
+                }
+
+                p {
+                    font-weight: bold;
+                    color: #aaa;
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-left: 16px;
+
+                    @include for-xl-desktop {
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-left: 15px;
+                    }
+                }
+
+                img {
+                    @include for-xl-desktop{
+                        width: 29px;
+                    }
+                }
+            }
+            
+            .rate_button3 {
+                width: 135px;
+                background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
+                box-shadow: 0px 15px 25px rgba(0, 163, 255, 0.3);
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                padding: 16px 0 17px;
+
+                @include for-xl-desktop {
+                    width: 110px;
+                    padding: 13px 0 14px;
+                }
+
+                p {
+                    font-weight: bold;
+                    color: #fff;
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-left: 16px;
+                    align-self: center;
+
+                    @include for-xl-desktop {
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin: 4px 0 0 12px;
+                    }
+                }
+
+                img {
+                    @include for-xl-desktop{
+                        width: 26px;
+                    }
+                }
+            }
+        }
+
+        .rate__choise {
+            width: 100%;
+            height: 666px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+
+            @include for-xl-desktop {
+                height: 635px;
+            }
+
+            .rate_card {
+                width: 416px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #FFFFFF;
+                box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+                border-radius: 5px 55px;
+
+                .choise_heading {
+                    width: 100%;
+                    height: 71px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+                    border-radius: 5px 55px 0px;
+
+                    p {
+                        font-size: 21px;
+                        line-height: 26px;
+                        color: #FFFFFF;
+                        text-transform: uppercase;
+
+                        @include for-xl-desktop {
+                            font-size: 20px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+
+                .common_heading {
+                    background: linear-gradient(103.24deg, #05FFFF -7.39%, #0AA6FE 85.9%);
+                }
+
+                .standart_heading {
+                    background: linear-gradient(89.46deg, #DDA6FF -5.85%, #D828F4 106.28%);
+                }
+
+                .pro_heading {
+                    background: linear-gradient(98.51deg, #FF9898 14.64%, #FF1F00 102.27%);
+                }
+
+                .choise_subheading {
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 37px;
+                    color: #2E3A59;
+                    margin-top: 36px;
+
+                    @include for-xl-desktop {
+                        font-size: 28px;
+                        line-height: 35px;
+                        margin-top: 34px;
+                    }
+                }
+
+                .choise_benefits {
+                    width: 316px;
+                    height: 310px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin: 34px auto 0;
+
+                    @include for-xl-desktop {
+                        height: 296px;
+                        margin: 32px auto 0;
+                    }
+
+                    li {
+                        color: #2E3A59;
+
+                        @include for-xl-desktop {
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
+
+                    .choise_selected::before {
+                        content: url('../images/selected.svg');
+                        margin-right: 12px;
+                    }
+
+                    .choise_notselect::before {
+                        content: url('../images/notselected.svg');
+                        margin-right: 17px;
+                    }
+                }
+
+                .choise_value {
+                    height: 67px;
+                    margin-top: 20px;
+                    display: flex;
+
+                    @include for-xl-desktop {
+                        height: 64px;
+                        margin-top: 16px;
+                    }
+
+                    .choise_value1 {
+                        font-size: 45px;
+                        line-height: 55px;
+                        font-weight: 600;
+                        color: #2E3A59;
+                        align-self: flex-end;
+
+                        @include for-xl-desktop {
+                            font-size: 40px;
+                            line-height: 50px;
+                        }
+                    }
+
+                    .choise_value2 {
+                        font-weight: 600;
+                        font-size: 35px;
+                        line-height: 43px;
+                        color: #2E3A59;
+                        margin-left: 15px;
+
+                        @include for-xl-desktop {
+                            font-size: 30px;
+                            line-height: 38px;
+                            margin-left: 13px;
+                        }
+                    }
+                }
+
+                .choise_button {
+                    width: 100%;
+                    height: 76px;
+                    background: linear-gradient(98.89deg, #FF8F3F 25.06%, #FF9B05 88.94%);
+                    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+                    border-radius: 0 0 5px 55px;
+                    margin-top: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @include for-xl-desktop {
+                        height: 72px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        line-height: 22px;
+                        font-weight: 500;
+                        color: #fff;
+                        padding-right: 10px;
+
+                        @include for-xl-desktop {
+                            font-size: 16px;
+                            line-height: 20px;
+                            padding-right: 8px;
+                        }
+                    }
+
+                    img {
+                        padding-left: 10px;
+
+                        @include for-xl-desktop {
+                            width: 50px;
+                            padding-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}

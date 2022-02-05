@@ -1,0 +1,35 @@
+@import "./reset.scss";
+@import "./media.scss";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./main_functional.scss";
+@import "./main_about.scss";
+@import "./main_rate.scss";
+@import "./main_question.scss";
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 22px;
+    background: #F5F9FF;
+    height: 100%;
+    overflow-x: hidden;
+}

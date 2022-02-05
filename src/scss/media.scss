@@ -1,0 +1,27 @@
+// @mixin for-xs-mobile {
+//     @media (max-width: 319px) { @content; }
+// }
+// @mixin for-mobile {
+//     @media (min-width: 320px) { @content; }
+// }
+// @mixin for-tablet {
+//     @media (min-width: 481px) { @content; }
+// }
+@mixin for-laptop {
+    @media (min-width: 768px) and (max-width: 1023px) { @content; }
+}
+@mixin for-xs-desktop {
+    @media (min-width: 1024px) and (max-width: 1279px) { @content; }
+}
+@mixin for-desktop {
+    @media (min-width: 1280px) and (max-width: 1439px) { @content; }
+}
+@mixin for-xl-desktop {
+    @media (max-width: 1919px) { @content; } // Rarely used
+}
+@mixin for-xxl-desktop {
+    @media (min-width: 1920px) { @content; }
+}
+// @mixin for-landscape {
+//     @media screen and (max-height: 500px) and (max-width: 900px) and (orientation: landscape) { @content; }
+// }
