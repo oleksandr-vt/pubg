@@ -9,6 +9,10 @@
                     height: 946px;
                 }
 
+                @include for-desktop {
+                    height: 929px;
+                }
+
     .header {
         width: 100%;
         padding-top: 25px;
@@ -26,6 +30,10 @@
 
             @include for-xl-desktop {
                 width: 1280px;
+            }
+
+            @include for-desktop {
+                width: 1166px;
             }
 
             .header__logo {
@@ -68,6 +76,10 @@
                     @include for-xl-desktop {
                         margin: 0 30px;
                     }
+
+                    @include for-desktop {
+                        margin: 0 29px;
+                    }
                 }
 
                 a:hover {
@@ -91,6 +103,11 @@
                     height: 54px;
                 }
 
+                @include for-desktop {
+                    width: 195px;
+                    height: 50px;
+                }
+
                 .header_lang {
                     width: 123px;
                     height: 58px;
@@ -106,12 +123,28 @@
                         height: 54px;
                     }
 
+                    @include for-desktop {
+                        width: 110px;
+                        height: 50px;
+                    }
+
                     span {
                         text-transform: uppercase;
                         font-weight: bold;
                         font-size: 17px;
                         line-height: 21px;
                         color: #2E3A59;
+
+                        @include for-desktop {
+                            font-size: 15px;
+                            line-height: 19px;
+                        }
+                    }
+
+                    .header_ru {
+                        @include for-desktop {
+                            width: 34px;
+                        }
                     }
                 }
 
@@ -128,6 +161,17 @@
 
                     @include for-xl-desktop {
                         height: 54px;
+                    }
+
+                    @include for-desktop {
+                        width: 70px;
+                        height: 50px;
+                    }
+
+                    img {
+                        @include for-desktop {
+                            width: 23px;
+                        }
                     }
                 }
             }
@@ -156,6 +200,11 @@
                 font-size: 39px;
                 line-height: 49px;
                 margin-left: 329px;
+            }
+
+            @include for-desktop {
+                font-size: 34px;
+                line-height: 44px;
             }
         }
 
@@ -239,6 +288,11 @@
                     max-width: 680px;
 
                     @include for-xl-desktop {
+                        font-size: 17px;
+                        line-height: 21px;
+                    }
+
+                    @include for-desktop {
                         font-size: 16px;
                         line-height: 20px;
                     }
@@ -316,6 +370,10 @@
                     max-width: 668px;
                     margin: 0;
                 }
+
+                @include for-desktop {
+                    margin-left: 17px;
+                }
             }
         }
 
@@ -323,9 +381,9 @@
             position: relative;
             margin-top: 50px;
 
-            @include for-xl-desktop {
-                margin: 50px 0 0 50px;
-            }
+            // @include for-xl-desktop {
+            //     margin: 50px 0 0 50px;
+            // }
 
             .right_wave {
                 position: absolute;
@@ -336,6 +394,10 @@
                     top: 0;
                     left: -23px;
                 }
+
+                @include for-desktop {
+                    width: 83px;
+                }
             }
 
             .right_car {
@@ -344,6 +406,10 @@
                 @include for-xl-desktop {
                     width: 860px;
                     margin-left: -195px;
+                }
+
+                @include for-desktop {
+                    width: 750px;
                 }
             }
         }

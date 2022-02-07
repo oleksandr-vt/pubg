@@ -81,6 +81,10 @@
                     height: 397px;
                 }
 
+                @include for-desktop {
+                    width: 450px; // fix
+                }
+
                 .contact_block {
                     width: 100%;
                     height: 100%;
@@ -112,6 +116,10 @@
                             width: 503px;
                             height: 278px;
                             margin-top: 28px;
+                        }
+
+                        @include for-desktop {
+                            width: 450px; // fix
                         }
 
                         .form_top {
@@ -161,6 +169,10 @@
                                 @include for-xl-desktop {
                                     width: 471px;
                                     margin-left: 9px;
+                                }
+
+                                @include for-desktop {
+                                    width: 300px; // fix
                                 }
                             }
 
@@ -276,6 +288,10 @@
                 width: 1280px;
             }
 
+            @include for-desktop {
+                width: 1166px;
+            }
+
             .footer__logo {
                 font-size: 17px;
                 line-height: 21px;
@@ -316,6 +332,10 @@
                     @include for-xl-desktop {
                         margin: 0 30px;
                     }
+
+                    @include for-desktop {
+                        margin: 0 29px;
+                    }
                 }
 
                 a:hover {
@@ -339,6 +359,11 @@
                     height: 54px;
                 }
 
+                @include for-desktop {
+                    width: 195px;
+                    height: 50px;
+                }
+
                 .footer_lang {
                     width: 123px;
                     height: 58px;
@@ -354,12 +379,28 @@
                         height: 54px;
                     }
 
+                    @include for-desktop {
+                        width: 110px;
+                        height: 50px;
+                    }
+
                     span {
                         text-transform: uppercase;
                         font-weight: bold;
                         font-size: 17px;
                         line-height: 21px;
                         color: #2E3A59;
+
+                        @include for-desktop {
+                            font-size: 15px;
+                            line-height: 19px;
+                        }
+                    }
+
+                    .footer_ru {
+                        @include for-desktop {
+                            width: 34px;
+                        }
                     }
                 }
 
@@ -376,6 +417,17 @@
 
                     @include for-xl-desktop {
                         height: 54px;
+                    }
+
+                    @include for-desktop {
+                        width: 70px;
+                        height: 50px;
+                    }
+
+                    img {
+                        @include for-desktop {
+                            width: 23px;
+                        }
                     }
                 }
             }

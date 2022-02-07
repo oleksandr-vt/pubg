@@ -14,6 +14,10 @@
         align-items: center;
         margin-top: 134px;
 
+        @include for-xl-desktop {
+            margin-top: 114px;
+        }
+
         .question__heading {
             @extend %h2title;
             color: #2E3A59;
@@ -23,12 +27,24 @@
                 position: absolute;
                 top: -12px;
                 left: -24px;
+
+                @include for-xl-desktop {
+                    width: 31px;
+                    top: -11px;
+                    left: -21px;
+                }
             }
 
             .question_line2 {
                 position: absolute;
                 bottom: -14px;
                 right: -26px;
+
+                @include for-xl-desktop {
+                    width: 31px;
+                    bottom: -11px;
+                    right: -24px;
+                }
             }
         }
 
@@ -39,6 +55,10 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include for-xl-desktop {
+                margin-top: 80px;
+            }
 
             .question_answer {
                 width: 100%;

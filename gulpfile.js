@@ -2,22 +2,23 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
 const minifyCSS = require('gulp-minify-css')
 sass.compiler = require('node-sass')
-
-// const gulp = require('gulp');
-// const autoprefixer = require('gulp-autoprefixer');
+const autoprefixer = require('gulp-autoprefixer');
 
 // exports.default = () => (
-// 	gulp.src('./src/scss/style.scss')
-// 		.pipe(autoprefixer({
-// 			cascade: false
-// 		}))
-// 		.pipe(gulp.dest('./build/css'))
+//     gulp.src('./src/scss/style.scss')
+//         .pipe(autoprefixer({
+//             cascade: false
+//         }))
+//         .pipe(gulp.dest('./build/css'))
 // );
 
 const scssTask = () => {
     return gulp.src('./src/scss/style.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(minifyCSS())
+        // .pipe(autoprefixer({
+        //     cascade: false
+        // }))
         .pipe(gulp.dest('./build/css'))
 }
 

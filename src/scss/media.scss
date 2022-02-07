@@ -14,7 +14,7 @@
     @media (min-width: 1024px) and (max-width: 1279px) { @content; }
 }
 @mixin for-desktop {
-    @media (min-width: 1280px) and (max-width: 1439px) { @content; }
+    @media (max-width: 1439px) { @content; }
 }
 @mixin for-xl-desktop {
     @media (max-width: 1919px) { @content; } // Rarely used

@@ -2,8 +2,8 @@
 @import "./media.scss";
 
 .about {
-    background: url(../images/blueabout.svg) 0 0/100% auto no-repeat;
-    height: 600px;
+    background: url(../images/blueabout.svg) 0 0/contain no-repeat;
+    height: 597px;
     display: flex;
     justify-content: center;
     align-items: flex-end;

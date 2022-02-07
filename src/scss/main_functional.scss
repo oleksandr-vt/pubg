@@ -232,10 +232,10 @@
             color: #828282;
             margin-top: 25px;
 
-            @include for-xl-desktop {
-                font-size: 16px;
-                line-height: 20px;
-            }
+            // @include for-xl-desktop {
+            //     font-size: 16px;
+            //     line-height: 20px;
+            // }
         }
 
         .functional_list {
@@ -251,15 +251,15 @@
                 margin-top: 49px;
                 width: 580px;
                 height: 205px;
-                padding-left: 43px;
+                padding-left: 29px;
             }
 
             .functional_text {
                 color: #2E3A59;
 
                 @include for-xl-desktop {
-                    font-size: 16px;
-                    line-height: 20px;
+                    font-size: 17px;
+                    line-height: 21px;
                 }
 
                 .functional_boldtext {
