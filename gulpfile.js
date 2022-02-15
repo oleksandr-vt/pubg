@@ -2,7 +2,7 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
 const minifyCSS = require('gulp-minify-css')
 sass.compiler = require('node-sass')
-const autoprefixer = require('gulp-autoprefixer');
+// const autoprefixer = require('gulp-autoprefixer');
 
 // exports.default = () => (
 //     gulp.src('./src/scss/style.scss')
@@ -37,6 +37,11 @@ const fontsTask = () => {
         .pipe(gulp.dest('./build/fonts'))
 }
 
+// const jsTask = () => {
+//     return gulp.src('./src/js/*')
+//         .pipe(gulp.dest('./build/js'))
+// }
+
 gulp.task('watch', () => {
     htmlTask()
     scssTask()
@@ -47,4 +52,5 @@ gulp.task('watch', () => {
     gulp.watch('./src/*.html', gulp.series(htmlTask))
     gulp.watch('./src/images/*', gulp.series(imageTask))
     gulp.watch('./src/fonts/*', gulp.series(fontsTask))
+    // gulp.watch('./src/js/*', gulp.series(jsTask))
 });

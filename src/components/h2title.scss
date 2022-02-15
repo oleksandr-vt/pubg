@@ -8,4 +8,9 @@
         font-size: 40px;
         line-height: 50px;
     }
+
+    @include for-laptop {
+        font-size: 34px;
+        line-height: 44px;
+    }
 }

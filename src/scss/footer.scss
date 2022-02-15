@@ -10,8 +10,16 @@
         height: 938px;
     }
 
+    @include for-desktop {
+        height: 827px;
+    }
+
+    @include for-laptop {
+        height: 704px;
+    }
+
     .contact {
-        height: 750px; // fix
+        height: 750px;
         margin: 0 68px;
         display: flex;
         flex-direction: column;
@@ -19,6 +27,14 @@
 
         @include for-xl-desktop {
             margin: 0 auto;
+        }
+
+        @include for-desktop {
+            height: 713px;
+        }
+
+        @include for-laptop {
+            height: 702px;
         }
 
         .contact__heading {
@@ -29,6 +45,10 @@
 
             @include for-xl-desktop {
                 margin-top: 84px;
+            }
+
+            @include for-laptop {
+                margin-top: 75px;
             }
 
             .contact_line {
@@ -50,9 +70,9 @@
             justify-content: center;
             margin-top: 90px;
 
-            // @include for-xl-desktop {
-            //     margin-top: 102px;
-            // }
+            @include for-laptop {
+                margin-top: 85px;
+            }
 
             .contact_left {
                 margin: -56px 0 0 -184px;
@@ -60,10 +80,22 @@
                 @include for-xl-desktop {
                     margin: 34px 0 0 -157px;
                 }
+
+                @include for-laptop {
+                    margin: 32px 0 0 -157px;
+                }
                 
                 img {
                     @include for-xl-desktop {
                         width: 810px;
+                    }
+
+                    @include for-desktop {
+                        width: 650px;
+                    }
+
+                    @include for-laptop {
+                        width: 520px;
                     }
                 }
             }
@@ -82,7 +114,13 @@
                 }
 
                 @include for-desktop {
-                    width: 450px; // fix
+                    width: 545px;
+                    height: 378px;
+                }
+
+                @include for-laptop {
+                    width: 456px;
+                    height: 300px;
                 }
 
                 .contact_block {
@@ -94,6 +132,14 @@
                         padding: 42px 31px 29px 56px;
                     }
 
+                    @include for-desktop {
+                        padding: 39px 31px 27px 51px;
+                    }
+
+                    @include for-laptop {
+                        padding: 30px 23px 20px 34px;
+                    }
+
                     .contact_title {
                         font-weight: 600;
                         color: #2E3A59;
@@ -101,6 +147,11 @@
                         @include for-xl-desktop {
                             font-size: 16px;
                             line-height: 20px;
+                        }
+
+                        @include for-laptop {
+                            font-size: 15px;
+                            line-height: 18px;
                         }
                     }
 
@@ -119,7 +170,15 @@
                         }
 
                         @include for-desktop {
-                            width: 450px; // fix
+                            width: 463px;
+                            height: 268px;
+                            margin-top: 24px;
+                        }
+
+                        @include for-laptop {
+                            width: 399px;
+                            height: 217px;
+                            margin-top: 15px;
                         }
 
                         .form_top {
@@ -127,6 +186,14 @@
                             height: 37px;
                             display: flex;
                             justify-content: space-between;
+
+                            @include for-desktop {
+                                height: 34px;
+                            }
+
+                            @include for-laptop {
+                                height: 29px;
+                            }
 
                             .form_input {
                                 width: 264px;
@@ -137,6 +204,21 @@
                                     width: 242px;
                                 }
 
+                                @include for-desktop {
+                                    width: 222px;
+                                }
+
+                                @include for-laptop {
+                                    width: 192px;
+                                }
+
+                                img {
+                                    @include for-laptop {
+                                        zoom: 0.9;
+                                        margin-top: 2px;
+                                    }
+                                }
+
                                 input {
                                     width: 208px;
                                     height: 25px;
@@ -145,12 +227,25 @@
                                     @include for-xl-desktop {
                                         margin-left: 9px;
                                     }
+
+                                    @include for-desktop {
+                                        width: 188px;
+                                    }
+
+                                    @include for-laptop {
+                                        width: 160px;
+                                    }
                                 }
 
                                 input::placeholder {
                                     font-size: 14px;
                                     line-height: 17px;
                                     color: rgba(46, 58, 89, 0.43);
+
+                                    @include for-laptop {
+                                        font-size: 13px;
+                                        line-height: 15px;
+                                    }
                                 }
                             }
                         }
@@ -160,9 +255,17 @@
                             height: 98px;
                             border-bottom: 0.3px solid rgba(46, 58, 89, 0.43);
 
+                            @include for-laptop {
+                                height: 75px;
+                            }
+
+                            img {
+                                zoom: 0.9;
+                            }
+
                             .form_comment {
                                 width: 494px;
-                                height: 75px;
+                                height: 90px;
                                 resize: none;
                                 margin-left: 10px;
 
@@ -172,7 +275,12 @@
                                 }
 
                                 @include for-desktop {
-                                    width: 300px; // fix
+                                    width: 420px;
+                                }
+
+                                @include for-laptop {
+                                    width: 369px;
+                                    height: 70px;
                                 }
                             }
 
@@ -193,6 +301,10 @@
                                 height: 62px;
                             }
 
+                            @include for-laptop {
+                                height: 58px;
+                            }
+
                             button {
                                 width: 198px;
                                 height: 100%;
@@ -202,6 +314,10 @@
 
                                 @include for-xl-desktop {
                                     width: 186px;
+                                }
+
+                                @include for-laptop {
+                                    width: 170px;
                                 }
 
                                 p {
@@ -214,8 +330,17 @@
                                         font-size: 16px;
                                         line-height: 20px;
                                     }
+
+                                    @include for-laptop {
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                    }
                                 }
                             }
+
+                            // button:hover {
+                            //     background: linear-gradient(98.89deg, #ff7605 25.06%, #ff7c3f 88.94%);
+                            // }
                         }
                     }
                 }
@@ -233,11 +358,25 @@
                         height: 100px;
                     }
 
+                    @include for-desktop {
+                        width: 94px;
+                        height: 94px;
+                    }
+
+                    @include for-laptop {
+                        width: 80px;
+                        height: 80px;
+                    }
+
                     img {
                         transform: rotate(45deg);
 
                         @include for-xl-desktop {
                             width: 44%;
+                        }
+
+                        @include for-desktop {
+                            width: 41%;
                         }
                     }
                 }
@@ -251,6 +390,11 @@
                         top: -51px;
                         right: -51px;
                     }
+
+                    @include for-desktop {
+                        top: -48px;
+                        right: -48px;
+                    }
                 }
 
                 .rhomb_discord {
@@ -261,6 +405,11 @@
                     @include for-xl-desktop {
                         bottom: -51px;
                         left: -51px;
+                    }
+
+                    @include for-desktop {
+                        bottom: -48px;
+                        left: -48px;
                     }
                 }
             }
@@ -275,6 +424,15 @@
         @include for-xl-desktop {
             margin-top: 62px;
             padding-bottom: 22px;
+        }
+
+        @include for-desktop {
+            margin-top: -8px;
+        }
+
+        @include for-laptop {
+            padding-bottom: 18px;
+            margin-top: -108px;
         }
 
         .footer__content {
@@ -292,6 +450,10 @@
                 width: 1166px;
             }
 
+            @include for-laptop {
+                width: 960px;
+            }
+
             .footer__logo {
                 font-size: 17px;
                 line-height: 21px;
@@ -301,6 +463,11 @@
                 @include for-xl-desktop {
                     font-size: 15px;
                     line-height: 19px;
+                }
+
+                @include for-laptop {
+                    font-size: 14px;
+                    line-height: 18px;
                 }
 
                 a {
@@ -323,6 +490,11 @@
                     line-height: 20px;
                 }
 
+                @include for-laptop {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+
                 a {
                     color: #fff;
                     margin: 0 40.5px;
@@ -336,10 +508,15 @@
                     @include for-desktop {
                         margin: 0 29px;
                     }
+
+                    @include for-laptop {
+                        margin: 0 20px;
+                    }
                 }
 
                 a:hover {
                     color: #B3EEFF;
+                    transition-duration: 0.3s;
                 }
                 
                 .footer_active {
@@ -364,6 +541,11 @@
                     height: 50px;
                 }
 
+                @include for-laptop {
+                    width: 166px;
+                    height: 48px;
+                }
+
                 .footer_lang {
                     width: 123px;
                     height: 58px;
@@ -384,6 +566,11 @@
                         height: 50px;
                     }
 
+                    @include for-laptop {
+                        width: 88px;
+                        height: 48px;
+                    }
+
                     span {
                         text-transform: uppercase;
                         font-weight: bold;
@@ -400,6 +587,10 @@
                     .footer_ru {
                         @include for-desktop {
                             width: 34px;
+                        }
+
+                        @include for-laptop {
+                            width: 32px;
                         }
                     }
                 }
@@ -424,9 +615,18 @@
                         height: 50px;
                     }
 
+                    @include for-laptop {
+                        width: 64px;
+                        height: 48px;
+                    }
+
                     img {
                         @include for-desktop {
                             width: 23px;
+                        }
+
+                        @include for-laptop {
+                            width: 21px;
                         }
                     }
                 }
@@ -445,6 +645,12 @@
                 font-size: 16px;
                 line-height: 20px;
                 margin-top: 30px;
+            }
+
+            @include for-laptop {
+                font-size: 14px;
+                line-height: 18px;
+                margin-top: 26px;
             }
         }
     }

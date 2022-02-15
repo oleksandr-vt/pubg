@@ -1,3 +1,24 @@
+@mixin for-xs-mobile {
+    @media (max-width: 374.98px) { @content; }
+}
+@mixin for-mobile {
+    @media (max-width: 767.98px) { @content; }
+}
+@mixin for-tablet {
+    @media (max-width: 1023.98px) { @content; }
+}
+@mixin for-laptop {
+    @media (max-width: 1279.98px) { @content; }
+}
+@mixin for-desktop {
+    @media (max-width: 1439.98px) { @content; }
+}
+@mixin for-xl-desktop {
+    @media (max-width: 1919.98px) { @content; } // Rarely used
+}
+@mixin for-xxl-desktop {
+    @media (min-width: 1920px) { @content; }
+}
 // @mixin for-xs-mobile {
 //     @media (max-width: 319px) { @content; }
 // }
@@ -7,21 +28,20 @@
 // @mixin for-tablet {
 //     @media (min-width: 481px) { @content; }
 // }
-@mixin for-laptop {
-    @media (min-width: 768px) and (max-width: 1023px) { @content; }
-}
-@mixin for-xs-desktop {
-    @media (min-width: 1024px) and (max-width: 1279px) { @content; }
-}
-@mixin for-desktop {
-    @media (max-width: 1439px) { @content; }
-}
-@mixin for-xl-desktop {
-    @media (max-width: 1919px) { @content; } // Rarely used
-}
-@mixin for-xxl-desktop {
-    @media (min-width: 1920px) { @content; }
-}
 // @mixin for-landscape {
 //     @media screen and (max-height: 500px) and (max-width: 900px) and (orientation: landscape) { @content; }
 // }
+
+
+// IDK
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }

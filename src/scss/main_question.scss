@@ -6,6 +6,10 @@
     display: flex;
     justify-content: center;
 
+    @include for-laptop {
+        height: 100%;
+    }
+
     .question__container {
         width: 946px;
         max-height: 100%;
@@ -16,6 +20,11 @@
 
         @include for-xl-desktop {
             margin-top: 114px;
+        }
+
+        @include for-laptop {
+            width: 830px;
+            margin-top: 75px;
         }
 
         .question__heading {
@@ -33,6 +42,10 @@
                     top: -11px;
                     left: -21px;
                 }
+
+                @include for-laptop {
+                    width: 28px;
+                }
             }
 
             .question_line2 {
@@ -44,6 +57,10 @@
                     width: 31px;
                     bottom: -11px;
                     right: -24px;
+                }
+
+                @include for-laptop {
+                    width: 28px;
                 }
             }
         }
@@ -60,12 +77,21 @@
                 margin-top: 80px;
             }
 
+            @include for-laptop {
+                height: 550px;
+                margin-top: 55px;
+            }
+
             .question_answer {
                 width: 100%;
                 height: 96px;
                 background: #FFFFFF;
                 box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
                 border-radius: 5px;
+
+                @include for-laptop {
+                    height: 80px;
+                }
 
                 .answer_wrapper {
                     width: 100%;
@@ -74,21 +100,40 @@
                     display: flex;
                     justify-content: space-between;
 
+                    @include for-laptop {
+                        padding: 29px 34px;
+                    }
+
                     p {
                         font-weight: 600;
                         font-size: 18px;
                         line-height: 22px;
                         color: #2E3A59;
+
+                        @include for-laptop {
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
                     }
 
                     button {
                         background-color: transparent;
+
+                        img {
+                            @include for-laptop {
+                                width: 20px;
+                            }
+                        }
                     }
                 }
             }
 
             .answer_selected {
                 height: 190px;
+
+                @include for-laptop {
+                    height: 166px;
+                }
 
                 .answer_wrapper_selected {
                     display: flex;
@@ -104,10 +149,21 @@
                             font-size: 18px;
                             line-height: 22px;
                             color: #2E3A59;
+
+                            @include for-laptop {
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
                         }
 
                         button {
                             background-color: transparent;
+
+                            img {
+                                @include for-laptop {
+                                    width: 18px;
+                                }
+                            }
                         }
                     }
 
@@ -122,12 +178,23 @@
                             font-size: 16px;
                             line-height: 20px;
                             color: #727272;
+
+                            @include for-laptop {
+                                font-size: 15px;
+                                line-height: 22px;
+                                width: 720px;
+                            }
                         }
                     }
 
                     .answer_subheader::before {
                         content: url('../images/beforeline.svg');
                         margin-right: 19px;
+
+                        @include for-laptop {
+                            zoom: 0.9;
+                            margin-right: 15px;
+                        }
                     }
                 }
             }
@@ -140,6 +207,11 @@
             text-decoration-line: underline;
             color: #0AA6FE;
             margin-top: 45px;
+
+            @include for-desktop {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
     }
 }

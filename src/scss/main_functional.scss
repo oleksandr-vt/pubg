@@ -5,6 +5,10 @@
     display: flex;
     justify-content: center;
 
+    @include for-laptop {
+        margin-top: 10px;
+    }
+
     .functional__left {
         width: 206px + 226px + 135px;
         margin-right: 44.5px;
@@ -17,6 +21,11 @@
             margin-right: 34px;
         }
 
+        @include for-laptop {
+            width: 410px;
+            margin-right: 19px;
+        }
+
         // Reusable buttons
         .functional_system {
             width: 206px + 226px + 135px;
@@ -26,6 +35,10 @@
 
             @include for-xl-desktop {
                 width: 489px;
+            }
+
+            @include for-laptop {
+                width: 410px;
             }
 
             .functional_button1 {
@@ -43,6 +56,11 @@
                     padding: 19px 0;
                 }
 
+                @include for-laptop {
+                    width: 148px;
+                    padding: 16px 0;
+                }
+
                 p {
                     font-weight: bold;
                     color: #aaa;
@@ -55,11 +73,21 @@
                         line-height: 20px;
                         margin-left: 13px;
                     }
+
+                    @include for-laptop {
+                        font-size: 15px;
+                        line-height: 19px;
+                        margin-left: 10px;
+                    }
                 }
 
                 img {
                     @include for-xl-desktop{
                         width: 29px;
+                    }
+
+                    @include for-laptop {
+                        width: 26px;
                     }
                 }
             }
@@ -79,6 +107,11 @@
                     padding: 14px 0;
                 }
 
+                @include for-laptop {
+                    width: 140px;
+                    padding: 12px 0;
+                }
+
                 p {
                     font-weight: bold;
                     color: #aaa;
@@ -91,11 +124,21 @@
                         line-height: 20px;
                         margin-left: 15px;
                     }
+
+                    @include for-laptop {
+                        font-size: 15px;
+                        line-height: 19px;
+                        margin-left: 11px;
+                    }
                 }
 
                 img {
                     @include for-xl-desktop{
                         width: 29px;
+                    }
+
+                    @include for-laptop {
+                        width: 26px;
                     }
                 }
             }
@@ -114,6 +157,11 @@
                     padding: 13px 0 14px;
                 }
 
+                @include for-laptop {
+                    width: 98px;
+                    padding: 11px 0 12px;
+                }
+
                 p {
                     font-weight: bold;
                     color: #fff;
@@ -127,11 +175,21 @@
                         line-height: 20px;
                         margin: 4px 0 0 12px;
                     }
+
+                    @include for-laptop {
+                        font-size: 15px;
+                        line-height: 19px;
+                        margin: 2px 0 0 9px;
+                    }
                 }
 
                 img {
                     @include for-xl-desktop {
                         width: 26px;
+                    }
+
+                    @include for-laptop {
+                        width: 23px;
                     }
                 }
             }
@@ -150,6 +208,12 @@
                 line-height: 20px;
                 margin: 9px 0 0 115px;
             }
+
+            @include for-laptop {
+                font-size: 14px;
+                line-height: 18px;
+                margin: 9px 0 0 100px;
+            }
         }
 
         .functional_iphone {
@@ -157,6 +221,10 @@
 
             @include for-xl-desktop {
                 width: 280px;
+            }
+
+            @include for-laptop {
+                width: 227px;
             }
         }
 
@@ -168,7 +236,11 @@
 
             @include for-xl-desktop {
                 width: 145px;
-                margin-top: 29  px;
+                margin-top: 29px;
+            }
+
+            @include for-laptop {
+                width: 126px;
             }
 
             button {
@@ -177,6 +249,10 @@
                 img {
                     @include for-xl-desktop {
                         width: 57px;
+                    }
+
+                    @include for-laptop {
+                        width: 52px;
                     }
                 }
             }
@@ -195,6 +271,11 @@
             margin-left: 34px;
         }
 
+        @include for-laptop {
+            width: 520px;
+            margin-left: 19 px;
+        }
+
         .functional_heading {
             @extend %h2title;
             color: #2E3A59;
@@ -211,6 +292,10 @@
                     top: -9px;
                     left: -19px;
                 }
+
+                @include for-laptop {
+                    width: 28px;
+                }
             }
 
             .functional_line2 {
@@ -220,8 +305,12 @@
 
                 @include for-xl-desktop {
                     width: 31px;
-                    bottom: -10px;
-                    right: -24px;
+                    bottom: -9px;
+                    right: -23px;
+                }
+
+                @include for-laptop {
+                    width: 28px;
                 }
             }
         }
@@ -232,10 +321,10 @@
             color: #828282;
             margin-top: 25px;
 
-            // @include for-xl-desktop {
-            //     font-size: 16px;
-            //     line-height: 20px;
-            // }
+            @include for-laptop {
+                font-size: 15px;
+                line-height: 19px;
+            }
         }
 
         .functional_list {
@@ -254,12 +343,23 @@
                 padding-left: 29px;
             }
 
+            @include for-laptop {
+                margin-top: 39px;
+                width: 525px;
+                height: 190px;
+            }
+
             .functional_text {
                 color: #2E3A59;
 
                 @include for-xl-desktop {
                     font-size: 17px;
                     line-height: 21px;
+                }
+
+                @include for-laptop {
+                    font-size: 15px;
+                    line-height: 19px;
                 }
 
                 .functional_boldtext {
@@ -273,6 +373,11 @@
 
                 @include for-xl-desktop {
                     margin-right: 12px;
+                }
+
+                @include for-laptop {
+                    zoom: 0.9;
+                    margin-right: 10px;
                 }
             }
         }
@@ -294,6 +399,12 @@
                 margin-top: 57px;
             }
 
+            @include for-laptop {
+                width: 520px;
+                height: 72px;
+                margin-top: 46px;
+            }
+
             p {
                 color: #828282;
                 margin-left: 19px;
@@ -303,11 +414,21 @@
                     line-height: 20px;
                     margin-left: 16px;
                 }
+
+                @include for-laptop {
+                    font-size: 15px;
+                    line-height: 19px;
+                    margin-left: 14px;
+                }
             }
 
             img {
                 @include for-xl-desktop {
                     width: 29px;
+                }
+
+                @include for-laptop {
+                    width: 27px;
                 }
             }
         }
@@ -322,6 +443,12 @@
                 margin-top: 53px;
                 width: 450px;
                 height: 72px;
+            }
+
+            @include for-laptop {
+                margin-top: 43px;
+                width: 405px;
+                height: 64px;
             }
 
             .functional_button1 {
@@ -349,11 +476,20 @@
                         line-height: 20px;
                         padding-right: 14px;
                     }
+
+                    @include for-laptop {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
                 }
 
                 img {
                     @include for-xl-desktop {
                         width: 40px;
+                    }
+
+                    @include for-laptop {
+                        width: 35px;
                     }
                 }
             }
@@ -381,11 +517,20 @@
                         line-height: 20px;
                         padding-right: 14px;
                     }
+
+                    @include for-laptop {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
                 }
 
                 img {
                     @include for-xl-desktop {
                         width: 30px;
+                    }
+
+                    @include for-laptop {
+                        width: 27px;
                     }
                 }
             }

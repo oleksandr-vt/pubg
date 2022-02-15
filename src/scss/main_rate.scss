@@ -10,6 +10,10 @@
         height: 944px;
     }
 
+    @include for-laptop {
+        height: 100%;
+    }
+
     .rate__container {
         width: 1320px;
         display: flex;
@@ -21,7 +25,7 @@
         }
 
         @include for-desktop {
-            width: 1280px;
+            width: 1200px;
         }
 
         .rate__heading {
@@ -34,6 +38,10 @@
                 margin-top: 97px;
             }
 
+            @include for-laptop {
+                margin-top: 70px;
+            }
+
             .rate_line1 {
                 position: absolute;
                 top: -12px;
@@ -43,6 +51,10 @@
                     width: 31px;
                     top: -11px;
                     left: -21px;
+                }
+
+                @include for-laptop {
+                    width: 28px;
                 }
             }
 
@@ -55,6 +67,10 @@
                     width: 31px;
                     bottom: -8px;
                     right: -25px;
+                }
+
+                @include for-laptop {
+                    width: 28px;
                 }
             }
         }
@@ -72,6 +88,11 @@
                 margin-top: 54px;
             }
 
+            @include for-laptop {
+                width: 410px;
+                margin-top: 40px;
+            }
+
             .rate_button1 {
                 width: 206px;
                 background: #fff;
@@ -87,6 +108,11 @@
                     padding: 19px 0;
                 }
 
+                @include for-laptop {
+                    width: 148px;
+                    padding: 16px 0;
+                }
+
                 p {
                     font-weight: bold;
                     color: #aaa;
@@ -99,11 +125,21 @@
                         line-height: 20px;
                         margin-left: 13px;
                     }
+
+                    @include for-laptop {
+                        font-size: 15px;
+                        line-height: 19px;
+                        margin-left: 10px;
+                    }
                 }
 
                 img {
                     @include for-xl-desktop{
                         width: 29px;
+                    }
+
+                    @include for-laptop {
+                        width: 26px;
                     }
                 }
             }
@@ -123,6 +159,11 @@
                     padding: 14px 0;
                 }
 
+                @include for-laptop {
+                    width: 140px;
+                    padding: 12px 0;
+                }
+
                 p {
                     font-weight: bold;
                     color: #aaa;
@@ -135,11 +176,21 @@
                         line-height: 20px;
                         margin-left: 15px;
                     }
+
+                    @include for-laptop {
+                        font-size: 15px;
+                        line-height: 19px;
+                        margin-left: 11px;
+                    }
                 }
 
                 img {
                     @include for-xl-desktop{
                         width: 29px;
+                    }
+
+                    @include for-laptop {
+                        width: 26px;
                     }
                 }
             }
@@ -158,6 +209,11 @@
                     padding: 13px 0 14px;
                 }
 
+                @include for-laptop {
+                    width: 98px;
+                    padding: 11px 0 12px;
+                }
+
                 p {
                     font-weight: bold;
                     color: #fff;
@@ -171,11 +227,21 @@
                         line-height: 20px;
                         margin: 4px 0 0 12px;
                     }
+
+                    @include for-laptop {
+                        font-size: 15px;
+                        line-height: 19px;
+                        margin: 2px 0 0 9px;
+                    }
                 }
 
                 img {
                     @include for-xl-desktop{
                         width: 26px;
+                    }
+
+                    @include for-laptop {
+                        width: 23px;
                     }
                 }
             }
@@ -192,6 +258,19 @@
                 height: 635px;
             }
 
+            @include for-desktop {
+                height: 613px;
+            }
+
+            @include for-laptop {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 1909px;
+                margin-top: 40px;
+            }
+
             .rate_card {
                 width: 416px;
                 display: flex;
@@ -205,6 +284,17 @@
                     width: 412px;
                 }
 
+                @include for-desktop {
+                    width: 380px;
+                    border-radius: 5px 51px;
+                }
+
+                // @include for-laptop {
+                //     width: 416px;
+                //     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+                //     border-radius: 5px 55px;
+                // }
+
                 .choise_heading {
                     width: 100%;
                     height: 71px;
@@ -213,6 +303,16 @@
                     align-items: center;
                     box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
                     border-radius: 5px 55px 0px;
+
+                    @include for-desktop {
+                        height: 66px;
+                        border-radius: 5px 51px 0px;
+                    }
+
+                    // @include for-laptop {
+                    //     height: 71px;
+                    //     border-radius: 5px 55px 0px;
+                    // }
 
                     p {
                         font-size: 21px;
@@ -224,6 +324,16 @@
                             font-size: 20px;
                             line-height: 25px;
                         }
+
+                        @include for-desktop {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+
+                        // @include for-laptop {
+                        //     font-size: 21px;
+                        //     line-height: 26px;
+                        // }
                     }
                 }
 
@@ -251,6 +361,18 @@
                         line-height: 35px;
                         margin-top: 34px;
                     }
+
+                    @include for-desktop {
+                        font-size: 27px;
+                        line-height: 34px;
+                        margin-top: 31px;
+                    }
+
+                    // @include for-laptop {
+                    //     font-size: 30px;
+                    //     line-height: 37px;
+                    //     margin-top: 36px;
+                    // }
                 }
 
                 .choise_benefits {
@@ -266,15 +388,56 @@
                         margin: 32px auto 0;
                     }
 
+                    @include for-desktop {
+                        width: 286px;
+                        margin: 30px auto 0;
+                    }
+
+                    // @include for-laptop {
+                    //     width: 316px;
+                    //     height: 310px;
+                    //     margin: 34px auto 0;
+                    // }
+
                     li {
                         color: #2E3A59;
 
+                        @include for-desktop {
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+
+                        // @include for-laptop {
+                        //     font-size: 18px;
+                        //     line-height: 22px;
+                        // }
+
                         .choise_selected {
                             margin-right: 12px;
+
+                            @include for-desktop {
+                                width: 21px;
+                                margin-right: 9px;
+                            }
+
+                            // @include for-laptop {
+                            //     width: 23px;
+                            //     margin-right: 12px;
+                            // }
                         }
     
                         .choise_notselect {
                             margin-right: 17px;
+
+                            @include for-desktop {
+                                width: 17px;
+                                margin-right: 13px;
+                            }
+
+                            // @include for-laptop {
+                            //     width: 18px;
+                            //     margin-right: 17px;
+                            // }
                         }
                     }
                 }
@@ -289,6 +452,16 @@
                         margin-top: 16px;
                     }
 
+                    @include for-desktop {
+                        height: 57px;
+                        margin-top: 14px;
+                    }
+
+                    // @include for-laptop {
+                    //     height: 67px;
+                    //     margin-top: 20px;
+                    // }
+
                     .choise_value1 {
                         font-size: 45px;
                         line-height: 55px;
@@ -300,6 +473,16 @@
                             font-size: 40px;
                             line-height: 50px;
                         }
+
+                        @include for-desktop {
+                            font-size: 36px;
+                            line-height: 46px;
+                        }
+
+                        // @include for-laptop {
+                        //     font-size: 45px;
+                        //     line-height: 55px;
+                        // }
                     }
 
                     .choise_value2 {
@@ -314,6 +497,18 @@
                             line-height: 38px;
                             margin-left: 13px;
                         }
+
+                        @include for-desktop {
+                            font-size: 27px;
+                            line-height: 35px;
+                            margin-left: 11px;
+                        }
+
+                        // @include for-laptop {
+                        //     font-size: 35px;
+                        //     line-height: 43px;
+                        //     margin-left: 15px;
+                        // }
                     }
                 }
 
@@ -332,6 +527,16 @@
                         height: 72px;
                     }
 
+                    @include for-desktop {
+                        height: 70px;
+                        border-radius: 0 0 5px 51px;
+                    }
+
+                    // @include for-laptop {
+                    //     height: 76px;
+                    //     border-radius: 0 0 5px 55px;
+                    // }
+
                     p {
                         font-size: 18px;
                         line-height: 22px;
@@ -339,25 +544,34 @@
                         color: #fff;
                         padding-right: 10px;
 
-                        @include for-xl-desktop {
+                        @include for-desktop {
                             font-size: 16px;
                             line-height: 20px;
                             padding-right: 8px;
                         }
+
+                        // @include for-laptop {
+                        //     font-size: 18px;
+                        //     line-height: 22px;
+                        //     padding-right: 10px;
+                        // }
                     }
 
                     img {
                         padding-left: 10px;
 
-                        @include for-xl-desktop {
+                        @include for-desktop {
                             width: 50px;
                             padding-left: 8px;
                         }
+
+                        // @include for-laptop {
+                        //     width: 54px;
+                        //     padding-left: 10px;
+                        // }
                     }
                 }
             }
         }
-
-
     }
 }
