@@ -13,7 +13,7 @@
     <!-- Section Header -->
     <section class="section__header">
         <!-- Header Desktop -->
-        <header class="header-desktop">
+        <header class="header">
             <div class="header__content">
                 <div class="header__logo">
                     <a href="#">Logo</a>
@@ -28,38 +28,24 @@
                     <a href="#">Функционал</a>
                 </nav>
 
+                <div class="header__burger">
+                    <button class="header_burger_pointer">
+                        <img class="header_burgerline1" src="./images/burger-line.svg" alt="">
+                        <img class="header_burgerline2" src="./images/burger-line.svg" alt="">
+                    </button>
+                </div>
+
                 <div class="header__cabinet">
                     <div class="header_lang">
                         <img class="header_ru" src="./images/ru.svg" alt="">
                         <span>ru</span>
-                        <img src="./images/caret_down.svg" alt="">
+                        <img class="header_caret" src="./images/caret_down.svg" alt="">
                     </div>
 
                     <button class="header_account">
                         <img src="./images/account.svg" alt="">
                     </button>
                 </div>
-            </div>
-        </header>
-        <!-- Header Mobile -->
-        <header class="header-mobile">
-            <div class="header-mobile__wrapper">
-                <nav class="mobile-menu">
-                    <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
-                    <label for="checkbox" class="mobile-menu__btn">
-                        <div class="mobile-menu__icon"></div>
-                    </label>
-                    <div class="mobile-menu__container">
-                        <ul class="mobile-menu__list">
-                            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Home</a></li>
-                            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">About us</a></li>
-                            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Work</a></li>
-                            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Contacts</a></li>
-                        </ul>
-                    </div>
-                    <img class="logotyp" src="/images/logo.png" alt="логотип">
-                    <img class="search" src="/images/search.png" alt="search">
-                </nav>
             </div>
         </header>
         <!-- Subheader -->
@@ -71,10 +57,13 @@
         <section class="subheader__container">
             <div class="subheader_left">
                 <div class="subheader_left_list">
-                    <h1 class="left_title"><img class="left_svgline" src="./images/twolines.svg" alt="">ЧИТЫ НА P<img
-                            class="left_polygon" src="./images/polygon.svg" alt="">UBG
-                        ЛУЧШИЕ НА РЫНКЕ БЕЗ БАНА!
-                    </h1>
+                    <div class="left_title_mobile">
+                        <h1 class="left_title"><img class="left_svgline" src="./images/twolines.svg" alt="">ЧИТЫ НА
+                            P<img class="left_polygon" src="./images/polygon.svg" alt="">UBG
+                            ЛУЧШИЕ НА РЫНКЕ БЕЗ БАНА!
+                        </h1>
+                    </div>
+
                     <img class="left_line" src="./images/gradientline.svg" alt="">
                     <p class="left_text">Лучшие сборки на рынке, проверенные опытом и временем, а также, оптимальное
                         соотношение цены, надежности и производительности<br><br>Самая низкая цена за мегахеш</p>
@@ -85,7 +74,8 @@
                             <img src="./images/rightarrow.svg" alt="">
                         </button>
                         <button class="left_button2">
-                            <p>Посмотреть видео</p>
+                            <p class="left_video">Посмотреть видео</p>
+                            <p class="left_video_mobile">Видео-ролик</p>
                         </button>
                     </div>
                 </div>
@@ -104,6 +94,14 @@
         <!-- Functional section -->
         <section class="functional">
             <div class="functional__left">
+                <!-- Mobile -->
+                <h2 class="functional_heading_mobile"><img class="functional_line1_mobile"
+                        src="./images/gradientsmall.svg" alt="">Функционал<img class="functional_line2_mobile"
+                        src="./images/gradientsmall.svg" alt=""></h2>
+                <!-- Mobile -->
+                <p class="functional_subheading_mobile">Уникальный чит на iOS подойдет для всех устройств начиная от
+                    айфона 4S+.</p>
+
                 <!-- Reusable buttons -->
                 <div class="functional_system">
                     <button class="functional_button1">
@@ -141,6 +139,8 @@
 
                 <p class="functional_subheading">Уникальный чит на iOS подойдет для всех устройств начиная от айфона
                     4S+.</p>
+
+                <h4 class="functional_description">Описание:</h4>
 
                 <div class="functional_list">
                     <p class="functional_text"><b class="functional_boldtext">WallHack</b> - обнаруживает противников
@@ -191,6 +191,11 @@
                     <button class="about_rhomb rhomb_right">
                         <img src="./images/arrowleft.svg" alt="">
                     </button>
+                </div>
+                <!-- Mobile -->
+                <div class="about__arrow">
+                    <img class="about_arrow1" src="./images/mobilearrowleft.svg" alt="">
+                    <img class="about_arrow2" src="./images/mobilearrowright.svg" alt="">
                 </div>
             </div>
         </section>
@@ -385,6 +390,9 @@
     </main>
     <!-- Section Footer -->
     <section class="section__footer">
+        <!-- Mobile -->
+        <img class="footer__smoke" src="./images/smoke.png" alt="">
+
         <!-- Contact section -->
         <section class="contact">
             <h2 class="contact__heading"><img class="contact_line" src="./images/twolines.svg" alt="">Контакты
@@ -469,7 +477,6 @@
             <p>Защищено 2022 (C)</p>
         </footer>
     </section>
-    <script src="./js/index.js"></script>
 </body>
 
 </html>

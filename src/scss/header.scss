@@ -3,21 +3,38 @@
 .section__header {
     background: url(../images/whitebcg1.svg) 0 100%/100% auto no-repeat,
                 url(../images/bluebcg1.svg) 0 0/cover no-repeat;
-                height: 1111px;
+    height: 1111px;
 
-                @include for-xl-desktop {
-                    height: 946px;
-                }
+    @include for-xl-desktop {
+        height: 946px;
+    }
 
-                @include for-desktop {
-                    height: 929px;
-                }
+    @include for-desktop {
+        height: 929px;
+    }
 
-                @include for-laptop {
-                    height: 779px;
-                }
+    @include for-laptop {
+        height: 779px;
+    }
 
-    .header-desktop {
+    @include for-tablet {
+        height: 709px;
+    }
+
+    @include for-xl-mobile {
+        height: 632px;
+    }
+
+    @include for-mobile {
+        background: url(../images/headerbcgmobile.png) 0 0/100% auto no-repeat;
+        height: 590px;
+    }
+
+    @include for-xs-mobile {
+        height: 545px;
+    }
+
+    .header {
         width: 100%;
         padding-top: 25px;
 
@@ -29,8 +46,8 @@
             padding-top: 18px;
         }
 
-        @include for-tablet {
-            display: none;
+        @include for-mobile {
+            padding-top: 15px;
         }
 
         .header__content {
@@ -52,6 +69,10 @@
                 width: 960px;
             }
 
+            @include for-tablet {
+                width: 93%;
+            }
+
             .header__logo {
                 font-size: 17px;
                 line-height: 21px;
@@ -68,8 +89,22 @@
                     line-height: 18px;
                 }
 
+                @include for-tablet {
+                    order: 2;
+                }
+
                 a {
                     color: #fff;
+
+                    @include for-tablet {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
+                    @include for-xs-mobile {
+                        font-size: 13px;
+                        line-height: 17px;
+                    }    
                 }
 
                 a:hover {
@@ -91,6 +126,10 @@
                 @include for-laptop {
                     font-size: 14px;
                     line-height: 18px;
+                }
+
+                @include for-tablet {
+                    display: none;
                 }
 
                 a {
@@ -122,6 +161,50 @@
                 }
             }
 
+            .header__burger {
+                @include for-xxl-desktop {
+                    display: none;
+                }
+
+                @include for-xl-desktop {
+                    display: none;
+                }
+
+                @include for-laptop {
+                    display: none;
+                }
+
+                @include for-tablet {
+                    width: 80px;
+                    height: 38px;
+                    display: flex;
+                    order: 1;
+
+                    @include for-xl-mobile {
+                        width: 73px;
+                    }
+
+                    @include for-mobile {
+                        width: 66px;
+                    }
+
+                    .header_burger_pointer {
+                        width: 35px;
+                        display: flex;
+                        flex-direction: column;
+                        background: transparent;
+
+                        .header_burgerline1 {
+                            margin-top: 14px;
+                        }
+        
+                        .header_burgerline2 {
+                            margin-top: 11px;
+                        }
+                    }
+                }
+            }
+
             .header__cabinet {
                 width: 123px + 77px + 15px;
                 height: 58px;
@@ -141,6 +224,22 @@
                 @include for-laptop {
                     width: 166px;
                     height: 48px;
+                }
+
+                @include for-tablet {
+                    order: 3;
+                    width: 80px;
+                    height: 44px;
+                }
+
+                @include for-xl-mobile {
+                    width: 73px;
+                    height: 40px;
+                }
+
+                @include for-mobile {
+                    width: 66px;
+                    height: 36px;
                 }
 
                 .header_lang {
@@ -168,6 +267,21 @@
                         height: 48px;
                     }
 
+                    @include for-tablet {
+                        width: 80px;
+                        height: 44px;
+                    }
+
+                    @include for-xl-mobile {
+                        width: 73px;
+                        height: 40px;
+                    }
+
+                    @include for-mobile {
+                        width: 66px;
+                        height: 36px;
+                    }
+
                     span {
                         text-transform: uppercase;
                         font-weight: bold;
@@ -179,6 +293,17 @@
                             font-size: 15px;
                             line-height: 19px;
                         }
+
+                        @include for-tablet {
+                            font-size: 14px;
+                            line-height: 18px;
+                            margin-top: 1px;
+                        }
+
+                        @include for-xl-mobile {
+                            font-size: 12px;
+                            line-height: 16px;
+                        }
                     }
 
                     .header_ru {
@@ -188,6 +313,20 @@
 
                         @include for-laptop {
                             width: 32px;
+                        }
+
+                        @include for-tablet {
+                            width: 29px;
+                        }
+
+                        @include for-xl-mobile {
+                            width: 25px;
+                        }
+                    }
+
+                    .header_caret {
+                        @include for-tablet {
+                            display: none;
                         }
                     }
                 }
@@ -215,6 +354,10 @@
                     @include for-laptop {
                         width: 64px;
                         height: 48px;
+                    }
+
+                    @include for-tablet {
+                        display: none;
                     }
 
                     img {
@@ -293,6 +436,10 @@
         @include for-laptop {
             margin-top: 16px;
         }
+
+        @include for-tablet {
+            margin-top: 26px;
+        }
         
         .subheader_left {
             display: flex;
@@ -307,6 +454,29 @@
 
             @include for-laptop {
                 height: 618px;
+            }
+
+            @include for-tablet {
+                width: 455px;
+                height: 603px;
+            }
+
+            @include for-xl-mobile {
+                height: 548px;
+            }
+
+            @include for-xl-mobile {
+                width: 100%;
+                height: 562px;
+                overflow: hidden;
+            }
+
+            @include for-mobile {
+                height: 529px;
+            }
+
+            @include for-xs-mobile {
+                height: 481px;
             }
 
             .subheader_left_list {
@@ -329,50 +499,129 @@
                     align-self: flex-start;
                     margin-left: 28px;
                 }
+
+                @include for-tablet {
+                    margin: 0;
+                    width: 455px;
+                    min-height: 385px;
+                    align-items: center;
+                }
+
+                @include for-xl-mobile {
+                    margin: 0 auto;
+                    width: 340px;
+                    min-height: 399px;
+                }
+
+                @include for-mobile {
+                    min-height: 388px;
+                }
+
+                @include for-xs-mobile {
+                    width: 310px;
+                    min-height: 352px;
+                }
         
-                .left_title {
-                    font-family: 'Montserrat-Bold';
-                    font-weight: 900;
-                    font-size: 55px;
-                    line-height: 67px;
-                    color: #fff;
-                    max-width: 611px;
-                    position: relative;
-
-                    @include for-xl-desktop {
-                        font-size: 50px;
-                        line-height: 62px;
+                .left_title_mobile {
+                    @include for-xl-mobile {
+                        height: 125px;
+                        display: flex;
+                        align-items: flex-end;
                     }
 
-                    @include for-laptop {
-                        font-size: 40px;
-                        line-height: 52px;
-                        max-width: 480px;
+                    @include for-xs-mobile {
+                        height: 111px;
                     }
 
-                    .left_svgline {
-                        position: absolute;
-                        top: -16px;
-                        left: -25px;
+                    .left_title {
+                        font-family: 'Montserrat-Bold';
+                        font-weight: 900;
+                        font-size: 55px;
+                        line-height: 67px;
+                        color: #fff;
+                        max-width: 611px;
+                        position: relative;
 
                         @include for-xl-desktop {
-                            width: 41px;
-                            top: -14px;
-                            left: -21px;
+                            font-size: 50px;
+                            line-height: 62px;
                         }
 
                         @include for-laptop {
-                            width: 34px;
-                            top: -9px;
-                            left: -17px;
+                            font-size: 40px;
+                            line-height: 52px;
+                            max-width: 480px;
                         }
-                    }
 
-                    .left_polygon {
-                        margin: 11px 3px 0;
+                        @include for-tablet {
+                            text-align: center;
+                        }
 
-                        @include for-laptop {
-                            width: 32px;
+                        @include for-xl-mobile {
+                            font-size: 30px;
+                            line-height: 37px;
+                            max-width: 334px;
+                        }
+
+                        @include for-xs-mobile {
+                            font-size: 27px;
+                            line-height: 34px;
+                            max-width: 310px;
+                        }
+
+                        .left_svgline {
+                            position: absolute;
+                            top: -16px;
+                            left: -25px;
+
+                            @include for-xl-desktop {
+                                width: 41px;
+                                top: -14px;
+                                left: -21px;
+                            }
+
+                            @include for-laptop {
+                                width: 34px;
+                                top: -9px;
+                                left: -17px;
+                            }
+
+                            @include for-tablet {
+                                top: -9px;
+                                left: 24px;
+                            }
+
+                            @include for-xl-mobile {
+                                width: 28px;
+                                top: -9px;
+                                left: 9px;
+                            }
+
+                            @include for-xs-mobile {
+                                width: 26px;
+                                left: 11px;
+                            }
+                        }
+
+                        .left_polygon {
+                            margin: 11px 3px 0;
+
+                            @include for-laptop {
+                                width: 32px;
+                            }
+
+                            @include for-tablet {
+                                width: 29px;
+                            }
+
+                            @include for-xl-mobile {
+                                margin: 6px 3px 0;
+                                width: 26px;
+                            }
+
+                            @include for-xs-mobile {
+                                width: 23px;
+                            }
                         }
                     }
                 }
@@ -408,6 +657,29 @@
                         line-height: 18px;
                         max-width: 527px;
                     }
+
+                    @include for-tablet {
+                        text-align: center;
+                        width: 455px;
+                    }
+
+                    @include for-xl-mobile {
+                        font-size: 13px;
+                        line-height: 16px;
+                        max-width: 340px;
+                    }
+
+                    @include for-mobile {
+                        font-size: 12px;
+                        line-height: 15px;
+                        width: 315px;
+                    }
+
+                    @include for-xs-mobile {
+                        font-size: 11px;
+                        line-height: 14px;
+                        width: 287px;
+                    }
                 }
 
                 .left_buttons {
@@ -421,6 +693,17 @@
 
                     @include for-laptop {
                         width: 403px;
+                    }
+
+                    @include for-xl-mobile {
+                        flex-direction: column;
+                        align-items: center;
+                        height: 125px;
+                        width: 144px;
+                    }
+
+                    @include for-xs-mobile {
+                        height: 115px;
                     }
 
                     .left_button1 {
@@ -443,6 +726,12 @@
                             padding: 16px 26px 16px 32px;
                         }
 
+                        @include for-xl-mobile {
+                            width: 144px;
+                            height: 54px;
+                            padding: 18px 25px;
+                        }
+
                         p {
                             font-weight: 400;
                             font-size: 18px;
@@ -458,11 +747,20 @@
                                 font-size: 14px;
                                 line-height: 18px;
                             }
+
+                            @include for-xl-mobile {
+                                font-size: 13px;
+                                line-height: 16px;
+                            }
                         }
 
                         img {
                             @include for-laptop {
                                 width: 42px;
+                            }
+
+                            @include for-xl-mobile {
+                                width: 32px;
                             }
                         }
                     }
@@ -483,7 +781,13 @@
                             width: 206px;
                         }
 
-                        p {
+                        @include for-xl-mobile {
+                            width: 144px;
+                            height: 54px;
+                            padding: 19px 25.5px;
+                        }
+
+                        .left_video {
                             font-weight: 400;
                             font-size: 18px;
                             line-height: 22px;
@@ -497,6 +801,32 @@
                             @include for-laptop {
                                 font-size: 14px;
                                 line-height: 18px;
+                            }
+
+                            @include for-xl-mobile {
+                                display: none;
+                            }
+                        }
+
+                        .left_video_mobile {
+                            @include for-xxl-desktop {
+                                display: none;
+                            }
+
+                            @include for-xl-desktop {
+                                display: none;
+                            }
+
+                            @include for-tablet {
+                                display: none;
+                            }
+
+                            @include for-xl-mobile {
+                                display: inline-block;
+                                color: #fff;
+                                font-weight: 400;
+                                font-size: 13px;
+                                line-height: 16px;
                             }
                         }
                     }
@@ -519,6 +849,26 @@
                 @include for-laptop {
                     width: 580px;
                 }
+
+                @include for-tablet {
+                    margin-left: -130px;
+                    width: 540px;
+                }
+
+                @include for-xl-mobile {
+                    width: 510px;
+                    margin-left: 28px;
+                }
+
+                @include for-mobile {
+                    width: 437px;
+                    margin-left: 17px;
+                }
+
+                @include for-xs-mobile {
+                    width: 400px;
+                    margin-left: 12px;
+                }
             }
         }
 
@@ -528,6 +878,10 @@
 
             @include for-laptop {
                 margin-top: 82px;
+            }
+
+            @include for-tablet {
+                display: none;
             }
 
             .right_wave {
@@ -565,6 +919,10 @@
                 @include for-laptop {
                     width: 559px;
                     margin-left: -227px;
+                }
+
+                @include for-tablet {
+                    width: 400px;
                 }
             }
         }

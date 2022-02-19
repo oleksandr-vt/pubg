@@ -13,4 +13,14 @@
         font-size: 34px;
         line-height: 44px;
     }
+
+    @include for-xl-mobile {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    @include for-xs-mobile {
+        font-size: 25px;
+        line-height: 30px;
+    }
 }

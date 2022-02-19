@@ -42,6 +42,14 @@
                 margin-top: 70px;
             }
 
+            @include for-xl-mobile {
+                margin-top: 50px;
+            }
+
+            @include for-xs-mobile {
+                margin-top: 45px;
+            }
+
             .rate_line1 {
                 position: absolute;
                 top: -12px;
@@ -55,6 +63,16 @@
 
                 @include for-laptop {
                     width: 28px;
+                }
+
+                @include for-xl-mobile {
+                    width: 25px;
+                    top: -10px;
+                    left: -19px;
+                }
+
+                @include for-xs-mobile {
+                    width: 22px;
                 }
             }
 
@@ -71,6 +89,17 @@
 
                 @include for-laptop {
                     width: 28px;
+                }
+
+                @include for-xl-mobile {
+                    width: 25px;
+                    bottom: -7px;
+                    right: -23px;
+                }
+
+                @include for-xs-mobile {
+                    width: 22px;
+                    right: -21px;
                 }
             }
         }
@@ -93,6 +122,22 @@
                 margin-top: 40px;
             }
 
+            @include for-xl-mobile {
+                width: 405px;
+                margin-top: 35px;
+            }
+
+            @include for-mobile {
+                width: 339px;
+            }
+
+            @include for-xs-mobile {
+                margin-top: 25px;
+                flex-direction: column;
+                height: 179px;
+                width: 123px;
+            }
+
             .rate_button1 {
                 width: 206px;
                 background: #fff;
@@ -113,6 +158,11 @@
                     padding: 16px 0;
                 }
 
+                @include for-mobile {
+                    width: 123px;
+                    padding: 17px 0;
+                }
+
                 p {
                     font-weight: bold;
                     color: #aaa;
@@ -131,6 +181,11 @@
                         line-height: 19px;
                         margin-left: 10px;
                     }
+
+                    @include for-mobile {
+                        font-size: 13px;
+                        line-height: 16px;
+                    }
                 }
 
                 img {
@@ -140,6 +195,10 @@
 
                     @include for-laptop {
                         width: 26px;
+                    }
+
+                    @include for-mobile {
+                        width: 23px;
                     }
                 }
             }
@@ -164,6 +223,15 @@
                     padding: 12px 0;
                 }
 
+                @include for-mobile {
+                    width: 116px;
+                    padding: 16px 0 17px;
+                }
+
+                @include for-xs-mobile {
+                    width: 123px;
+                }
+
                 p {
                     font-weight: bold;
                     color: #aaa;
@@ -182,6 +250,11 @@
                         line-height: 19px;
                         margin-left: 11px;
                     }
+
+                    @include for-mobile {
+                        font-size: 13px;
+                        line-height: 16px;
+                    }
                 }
 
                 img {
@@ -191,6 +264,10 @@
 
                     @include for-laptop {
                         width: 26px;
+                    }
+
+                    @include for-mobile {
+                        width: 18px;
                     }
                 }
             }
@@ -214,6 +291,15 @@
                     padding: 11px 0 12px;
                 }
 
+                @include for-mobile {
+                    width: 81px;
+                    padding: 16px 0 17px;
+                }
+
+                @include for-xs-mobile {
+                    width: 123px;
+                }
+
                 p {
                     font-weight: bold;
                     color: #fff;
@@ -233,6 +319,11 @@
                         line-height: 19px;
                         margin: 2px 0 0 9px;
                     }
+
+                    @include for-mobile {
+                        font-size: 13px;
+                        line-height: 16px;
+                    }
                 }
 
                 img {
@@ -242,6 +333,10 @@
 
                     @include for-laptop {
                         width: 23px;
+                    }
+
+                    @include for-mobile {
+                        width: 16px;
                     }
                 }
             }
@@ -271,6 +366,15 @@
                 margin-top: 40px;
             }
 
+            @include for-xl-mobile {
+                height: 1500px;
+            }
+
+            @include for-xs-mobile {
+                height: 1349px;
+                margin-top: 30px;
+            }
+
             .rate_card {
                 width: 416px;
                 display: flex;
@@ -289,11 +393,13 @@
                     border-radius: 5px 51px;
                 }
 
-                // @include for-laptop {
-                //     width: 416px;
-                //     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
-                //     border-radius: 5px 55px;
-                // }
+                @include for-xl-mobile {
+                    width: 299px;
+                }
+
+                @include for-xs-mobile {
+                    width: 280px;
+                }
 
                 .choise_heading {
                     width: 100%;
@@ -309,10 +415,13 @@
                         border-radius: 5px 51px 0px;
                     }
 
-                    // @include for-laptop {
-                    //     height: 71px;
-                    //     border-radius: 5px 55px 0px;
-                    // }
+                    @include for-xl-mobile {
+                        height: 56px;
+                    }
+
+                    @include for-xs-mobile {
+                        height: 54px;
+                    }
 
                     p {
                         font-size: 21px;
@@ -330,10 +439,10 @@
                             line-height: 22px;
                         }
 
-                        // @include for-laptop {
-                        //     font-size: 21px;
-                        //     line-height: 26px;
-                        // }
+                        @include for-xs-mobile {
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
                     }
                 }
 
@@ -368,11 +477,17 @@
                         margin-top: 31px;
                     }
 
-                    // @include for-laptop {
-                    //     font-size: 30px;
-                    //     line-height: 37px;
-                    //     margin-top: 36px;
-                    // }
+                    @include for-xl-mobile {
+                        font-size: 25px;
+                        line-height: 30px;
+                        margin-top: 25px;
+                    }
+
+                    @include for-xs-mobile {
+                        font-size: 22px;
+                        line-height: 27px;
+                        margin-top: 22px;
+                    }
                 }
 
                 .choise_benefits {
@@ -393,11 +508,17 @@
                         margin: 30px auto 0;
                     }
 
-                    // @include for-laptop {
-                    //     width: 316px;
-                    //     height: 310px;
-                    //     margin: 34px auto 0;
-                    // }
+                    @include for-xl-mobile {
+                        width: 245px;
+                        height: 207px;
+                        margin: 24px auto 0;
+                    }
+
+                    @include for-xs-mobile {
+                        width: 222px;
+                        height: 186px;
+                        margin: 18px auto 0;
+                    }
 
                     li {
                         color: #2E3A59;
@@ -407,10 +528,16 @@
                             line-height: 20px;
                         }
 
-                        // @include for-laptop {
-                        //     font-size: 18px;
-                        //     line-height: 22px;
-                        // }
+                        @include for-xl-mobile {
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
+
+                        @include for-xs-mobile {
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+
 
                         .choise_selected {
                             margin-right: 12px;
@@ -420,10 +547,14 @@
                                 margin-right: 9px;
                             }
 
-                            // @include for-laptop {
-                            //     width: 23px;
-                            //     margin-right: 12px;
-                            // }
+                            @include for-xl-mobile {
+                                width: 16px;
+                                margin-top: 2px;
+                            }
+
+                            @include for-xs-mobile {
+                                zoom: 0.9;
+                            }
                         }
     
                         .choise_notselect {
@@ -434,10 +565,14 @@
                                 margin-right: 13px;
                             }
 
-                            // @include for-laptop {
-                            //     width: 18px;
-                            //     margin-right: 17px;
-                            // }
+                            @include for-xl-mobile {
+                                width: 13px;
+                                margin: 2px 12px 0 0;
+                            }
+
+                            @include for-xs-mobile {
+                                zoom: 0.9;
+                            }
                         }
                     }
                 }
@@ -457,10 +592,14 @@
                         margin-top: 14px;
                     }
 
-                    // @include for-laptop {
-                    //     height: 67px;
-                    //     margin-top: 20px;
-                    // }
+                    @include for-xl-mobile {
+                        height: 49px;
+                    }
+
+                    @include for-xs-mobile {
+                        height: 43px;
+                        margin-top: 12px;
+                    }
 
                     .choise_value1 {
                         font-size: 45px;
@@ -479,10 +618,15 @@
                             line-height: 46px;
                         }
 
-                        // @include for-laptop {
-                        //     font-size: 45px;
-                        //     line-height: 55px;
-                        // }
+                        @include for-xl-mobile {
+                            font-size: 35px;
+                            line-height: 43px;
+                        }
+
+                        @include for-xs-mobile {
+                            font-size: 30px;
+                            line-height: 37px;
+                        }
                     }
 
                     .choise_value2 {
@@ -504,11 +648,17 @@
                             margin-left: 11px;
                         }
 
-                        // @include for-laptop {
-                        //     font-size: 35px;
-                        //     line-height: 43px;
-                        //     margin-left: 15px;
-                        // }
+                        @include for-xl-mobile {
+                            font-size: 25px;
+                            line-height: 30px;
+                            margin-left: 8px;
+                        }
+
+                        @include for-xs-mobile {
+                            font-size: 21px;
+                            line-height: 26px;
+                            margin-left: 7px;
+                        }
                     }
                 }
 
@@ -532,10 +682,14 @@
                         border-radius: 0 0 5px 51px;
                     }
 
-                    // @include for-laptop {
-                    //     height: 76px;
-                    //     border-radius: 0 0 5px 55px;
-                    // }
+                    @include for-xl-mobile {
+                        height: 60px;
+                    }
+
+                    @include for-xs-mobile {
+                        height: 58px;
+                        margin-top: 13px;
+                    }
 
                     p {
                         font-size: 18px;
@@ -550,11 +704,15 @@
                             padding-right: 8px;
                         }
 
-                        // @include for-laptop {
-                        //     font-size: 18px;
-                        //     line-height: 22px;
-                        //     padding-right: 10px;
-                        // }
+                        @include for-xl-mobile {
+                            font-size: 15px;
+                            line-height: 18px;
+                        }
+
+                        @include for-xs-mobile {
+                            font-size: 14px;
+                            line-height: 17 px;
+                        }
                     }
 
                     img {
@@ -565,10 +723,13 @@
                             padding-left: 8px;
                         }
 
-                        // @include for-laptop {
-                        //     width: 54px;
-                        //     padding-left: 10px;
-                        // }
+                        @include for-xl-mobile {
+                            width: 44px;
+                        }
+
+                        @include for-xs-mobile {
+                            width: 41px;
+                        }
                     }
                 }
             }

@@ -13,8 +13,24 @@
         height: 525px;
     }
 
+    @include for-tablet {
+        height: 555px;
+        margin-top: -50px;
+    }
+
+    @include for-xl-mobile {
+        background: url(../images/aboutbcgmobile.png) 50%/cover no-repeat;
+        margin-top: -25px;
+        align-items: flex-start;
+        height: 465px;
+    }
+
+    @include for-xs-mobile {
+        height: 412px;
+    }
+
     .about__container {
-        background: url(../images/bcgdott1.png) 50% 77%/ no-repeat;
+        background: url(../images/bcgdott1.png) 50% 77%/no-repeat;
         width: 940px;
         height: 241px + 77px + 130px;
 
@@ -22,6 +38,25 @@
             background: url(../images/bcgdott1.png) 50% 87%/700px no-repeat;
             width: 802px;
             // height: 305px;
+        }
+
+        @include for-tablet {
+            width: 768px;
+            background: url(../images/bcgdott1.png) 50% 57%/600px no-repeat;
+        }
+
+        @include for-xl-mobile {
+            background: url(../images/aboutbgcdottmobile.png) 50% 60%/400px no-repeat;
+            margin-top: 97px;
+            height: 350px;
+        }
+
+        @include for-mobile {
+            background: url(../images/aboutbgcdottmobile.png) 50% 60%/359px no-repeat;
+        }
+
+        @include for-xs-mobile {
+            background: url(../images/aboutbgcdottmobile.png) 50% 40%/305px no-repeat;
         }
 
         .about__heading {
@@ -45,6 +80,20 @@
                 margin-top: 87px;
             }
 
+            @include for-tablet {
+                margin-top: 36px;
+            }
+
+            @include for-xl-mobile {
+                width: 340px;
+                margin-top: 15px;
+            }
+
+            @include for-xs-mobile {
+                width: 286px;
+                margin-top: 5PX;
+            }
+
             .about_line {
                 position: absolute;
                 top: -16px;
@@ -59,6 +108,18 @@
                 @include for-laptop {
                     width: 33px;
                     top: -11px;
+                }
+
+                @include for-xl-mobile {
+                    width: 27px;
+                    top: -10px;
+                    left: -13px;
+                }
+
+                @include for-xs-mobile {
+                    width: 25px;
+                    top: -11px;
+                    left: -11px;
                 }
             }
         }
@@ -83,6 +144,14 @@
                 height: 198px;
             }
 
+            @include for-tablet {
+                justify-content: center;
+            }
+
+            @include for-xs-mobile {
+                height: 154px;
+            }
+
             .about_rhomb {
                 width: 115px;
                 height: 115px;
@@ -94,6 +163,10 @@
                 @include for-laptop {
                     width: 100px;
                     height: 100px;
+                }
+
+                @include for-tablet {
+                    display: none;
                 }
             }
 
@@ -123,6 +196,18 @@
                     width: 500px;
                 }
 
+                @include for-xl-mobile {
+                    width: 360px;
+                }
+
+                @include for-mobile {
+                    width: 321px;
+                }
+
+                @include for-xs-mobile {
+                    width: 280px;
+                }
+
                 .about_image {
                     max-width: 117px;
                     min-height: 117px;
@@ -130,6 +215,16 @@
                     @include for-laptop {
                         max-width: 103px;
                         min-height: 103px;
+                    }
+
+                    @include for-xl-mobile {
+                        max-width: 75px;
+                        min-height: 75px;
+                    }
+
+                    @include for-xs-mobile {
+                        max-width: 65px;
+                        min-height: 65px;
                     }
                 }
 
@@ -143,6 +238,22 @@
                         margin-top: 10px;
                         font-size: 16px;
                         line-height: 20px;
+                    }
+
+                    @include for-xl-mobile {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+
+                    @include for-mobile {
+                        font-size: 13px;
+                        line-height: 16px;
+                    }
+
+                    @include for-xs-mobile {
+                        font-size: 12px;
+                        line-height: 15px;
+                        margin-top: 5px;
                     }
                 }
 
@@ -160,6 +271,20 @@
                         zoom: 0.9;
                         margin: 4px 0 0 8px;
                     }
+
+                    @include for-xl-mobile {
+                        zoom: 0.8;
+                        margin: 5px 0 0 9px;
+                    }
+
+                    @include for-mobile {
+                        zoom: 0.7;
+                        margin: 7px 0 0 12px;
+                    }
+
+                    @include for-xs-mobile {
+                        zoom: 0.6;
+                    }
                 }
 
                 .about_subtitle {
@@ -174,7 +299,47 @@
                         line-height: 18px;
                         margin-top: 11px;
                     }
+
+                    @include for-xl-mobile {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+
+                    @include for-mobile {
+                        font-size: 11px;
+                    }
+
+                    @include for-xs-mobile {
+                        font-size: 10px;
+                        margin-top: 7px;
+                    }
                 }
+            }
+        }
+
+        .about__arrow {
+            @include for-xxl-desktop {
+                display: none;
+            }
+
+            @include for-xl-desktop {
+                display: none;
+            }
+
+            @include for-laptop {
+                display: none;
+            }
+
+            @include for-tablet {
+                display: flex;
+                justify-content: space-between;
+                width: 54px + 54px + 29px;
+                height: 28px;
+                margin: 68px auto 0;
+            }
+
+            @include for-xl-mobile {
+                margin: 36px auto 0;
             }
         }
     }

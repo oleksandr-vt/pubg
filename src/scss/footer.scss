@@ -18,6 +18,40 @@
         height: 704px;
     }
 
+    @include for-tablet {
+        height: 635px;
+        position: relative;
+    }
+
+    @include for-xl-mobile {
+        height: 739px;
+    }
+
+    @include for-xs-mobile {
+        height: 690px;
+    }
+
+    .footer__smoke {
+        @include for-xxl-desktop {
+            display: none;
+        }
+
+        @include for-xl-desktop {
+            display: none;
+        }
+
+        @include for-tablet {
+            display: block;
+            position: absolute;
+            bottom: 3px;
+            z-index: 10;
+        }
+
+        @include for-xs-mobile {
+            zoom: 0.8;
+        }
+    }
+
     .contact {
         height: 750px;
         margin: 0 68px;
@@ -37,6 +71,18 @@
             height: 702px;
         }
 
+        @include for-tablet {
+            height: 600px;
+        }
+        
+        @include for-xl-mobile {
+            height: 675px;
+        }
+
+        @include for-xs-mobile {
+            height: 635px;
+        }
+
         .contact__heading {
             @extend %h2title;
             color: #2E3A59;
@@ -51,6 +97,10 @@
                 margin-top: 75px;
             }
 
+            @include for-xs-mobile {
+                margin-top: 55px;
+            }
+
             .contact_line {
                 position: absolute;
                 top: -11px;
@@ -60,6 +110,22 @@
                     width: 39px;
                     top: -13px;
                     left: -19px;
+                }
+
+                @include for-laptop {
+                    width: 33px;
+                    top: -11px;
+                    left: -16px;
+                }
+
+                @include for-xl-mobile {
+                    width: 27px;
+                    top: -9px;
+                    left: -13px;
+                }
+
+                @include for-xs-mobile {
+                    width: 25px;
                 }
             }
         }
@@ -74,6 +140,10 @@
                 margin-top: 85px;
             }
 
+            @include for-xl-mobile {
+                margin-top: 90px;
+            }
+
             .contact_left {
                 margin: -56px 0 0 -184px;
 
@@ -83,6 +153,10 @@
 
                 @include for-laptop {
                     margin: 32px 0 0 -157px;
+                }
+
+                @include for-tablet {
+                    display: none;
                 }
                 
                 img {
@@ -123,6 +197,16 @@
                     height: 300px;
                 }
 
+                @include for-xl-mobile {
+                    width: 336px;
+                    height: 432px;
+                }
+
+                @include for-xs-mobile {
+                    width: 300px;
+                    height: 415px;
+                }
+
                 .contact_block {
                     width: 100%;
                     height: 100%;
@@ -140,6 +224,14 @@
                         padding: 30px 23px 20px 34px;
                     }
 
+                    @include for-xl-mobile {
+                        padding: 45px 28px 29px;
+                    }
+
+                    @include for-xs-mobile {
+                        padding: 45px 17px 29px;
+                    }
+
                     .contact_title {
                         font-weight: 600;
                         color: #2E3A59;
@@ -152,6 +244,12 @@
                         @include for-laptop {
                             font-size: 15px;
                             line-height: 18px;
+                        }
+
+                        @include for-xl-mobile {
+                            font-size: 14px;
+                            line-height: 17px;
+                            text-align: center;
                         }
                     }
 
@@ -181,6 +279,17 @@
                             margin-top: 15px;
                         }
 
+                        @include for-xl-mobile {
+                            width: 280px;
+                            height: 302px;
+                            margin: 39px auto 0;
+                        }
+
+                        @include for-xs-mobile {
+                            width: 266px;
+                            height: 284px;
+                        }
+
                         .form_top {
                             width: 100%;
                             height: 37px;
@@ -193,6 +302,15 @@
 
                             @include for-laptop {
                                 height: 29px;
+                            }
+
+                            @include for-xl-mobile {
+                                height: 105px;
+                                flex-direction: column;
+                            }
+
+                            @include for-xs-mobile {
+                                height: 93px;
                             }
 
                             .form_input {
@@ -212,10 +330,23 @@
                                     width: 192px;
                                 }
 
+                                @include for-xl-mobile {
+                                    height: 33px;
+                                    width: 280px;
+                                }
+
+                                @include for-xs-mobile {
+                                    width: 266px;
+                                }
+
                                 img {
                                     @include for-laptop {
                                         zoom: 0.9;
                                         margin-top: 2px;
+                                    }
+
+                                    @include for-xl-mobile {
+                                        zoom: 1;
                                     }
                                 }
 
@@ -235,6 +366,15 @@
                                     @include for-laptop {
                                         width: 160px;
                                     }
+
+                                    @include for-xl-mobile {
+                                        width: 245px;
+                                        margin-left: 5px;
+                                    }
+
+                                    @include for-xs-mobile {
+                                        width: 228px;
+                                    }
                                 }
 
                                 input::placeholder {
@@ -245,6 +385,10 @@
                                     @include for-laptop {
                                         font-size: 13px;
                                         line-height: 15px;
+                                    }
+
+                                    @include for-xs-mobile {
+                                        font-size: 12px;
                                     }
                                 }
                             }
@@ -259,8 +403,21 @@
                                 height: 75px;
                             }
 
+                            @include for-xl-mobile {
+                                height: 76px;
+                            }
+
+                            @include for-xs-mobile {
+                                height: 71px;
+                            }
+
                             img {
                                 zoom: 0.9;
+
+                                @include for-xl-mobile {
+                                    zoom: 1;
+                                    margin-left: 1px;
+                                }
                             }
 
                             .form_comment {
@@ -282,12 +439,27 @@
                                     width: 369px;
                                     height: 70px;
                                 }
+
+                                @include for-xl-mobile {
+                                    width: 245px;
+                                    margin-left: 6px;
+                                }
+
+                                @include for-xs-mobile {
+                                    width: 228px;
+                                    height: 68px;
+                                }
                             }
 
                             .form_comment::placeholder {
                                 font-size: 14px;
                                 line-height: 17px;
                                 color: rgba(46, 58, 89, 0.43);
+
+                                @include for-laptop {
+                                    font-size: 13px;
+                                    line-height: 15px;
+                                }
                             }
                         }
 
@@ -305,6 +477,10 @@
                                 height: 58px;
                             }
 
+                            @include for-xs-mobile {
+                                height: 54px;
+                            }
+
                             button {
                                 width: 198px;
                                 height: 100%;
@@ -318,6 +494,10 @@
 
                                 @include for-laptop {
                                     width: 170px;
+                                }
+
+                                @include for-xs-mobile {
+                                    width: 156px;
                                 }
 
                                 p {
@@ -334,6 +514,11 @@
                                     @include for-laptop {
                                         font-size: 14px;
                                         line-height: 18px;
+                                    }
+
+                                    @include for-xs-mobile {
+                                        font-size: 13px;
+                                        line-height: 17px;
                                     }
                                 }
                             }
@@ -368,6 +553,11 @@
                         height: 80px;
                     }
 
+                    @include for-xl-mobile {
+                        width: 70px;
+                        height: 70px;
+                    }
+
                     img {
                         transform: rotate(45deg);
 
@@ -376,6 +566,10 @@
                         }
 
                         @include for-desktop {
+                            width: 41%;
+                        }
+
+                        @include for-xl-mobile {
                             width: 41%;
                         }
                     }
@@ -395,6 +589,20 @@
                         top: -48px;
                         right: -48px;
                     }
+
+                    @include for-laptop {
+                        top: -41px;
+                        right: -41px;
+                    }
+
+                    @include for-xl-mobile {
+                        top: -60px;
+                        right: 177px;
+                    }
+
+                    @include for-xs-mobile {
+                        right: 158px;
+                    }
                 }
 
                 .rhomb_discord {
@@ -410,6 +618,20 @@
                     @include for-desktop {
                         bottom: -48px;
                         left: -48px;
+                    }
+
+                    @include for-laptop {
+                        bottom: -41px;
+                        left: -41px;
+                    }
+
+                    @include for-xl-mobile {
+                        top: -60px;
+                        left: 176px;
+                    }
+
+                    @include for-xs-mobile {
+                        left: 159px;
                     }
                 }
             }
@@ -435,6 +657,11 @@
             margin-top: -108px;
         }
 
+        @include for-tablet {
+            margin-top: -10px;
+            padding-bottom: 0;
+        }
+
         .footer__content {
             width: 38px + 1297px + 77px;
             display: flex;
@@ -452,6 +679,10 @@
 
             @include for-laptop {
                 width: 960px;
+            }
+
+            @include for-tablet {
+                display: none;
             }
 
             .footer__logo {
@@ -651,6 +882,21 @@
                 font-size: 14px;
                 line-height: 18px;
                 margin-top: 26px;
+            }
+
+            @include for-tablet {
+                margin-top: 0;
+            }
+
+            @include for-xl-mobile {
+                font-size: 17px;
+                line-height: 21px;
+                margin-top: 12px;
+            }
+
+            @include for-xs-mobile {
+                font-size: 15px;
+                line-height: 19px;
             }
         }
     }
